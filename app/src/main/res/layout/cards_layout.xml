@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/picon1" />
+            <ImageView
+                android:id="@+id/imgResult"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/vicon2"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/dimg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/dicon"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/imageView"
+               />
+            <ProgressBar
+                android:id="@+id/pbImageLoading"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/progress_bg"
+                android:visibility="gone"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:layout_below="@+id/imageView"
+                android:progressDrawable="@drawable/progress" />
+            <TextView
+                android:id="@+id/tvPercent"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                 android:text="0%"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
